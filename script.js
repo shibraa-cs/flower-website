@@ -91,7 +91,7 @@ function signInUser(email, password) {
             const userData = getUserData(email);
             const orderCount = userData && userData.orders ? userData.orders.length : 0;
             alert('Welcome back, ' + user.name + '! (Orders: ' + orderCount + ')');
-            window.location.href = 'homepage.html';
+            window.location.href = 'index.html';
             return true;
         }
     }
@@ -104,7 +104,7 @@ function signInUser(email, password) {
 function signOut() {
     localStorage.removeItem('currentUser');
     alert('You have been signed out.');
-    window.location.href = 'homepage.html';
+    window.location.href = 'index.html';
 }
 
 // Get current user
