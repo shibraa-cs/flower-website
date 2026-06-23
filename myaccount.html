@@ -136,7 +136,7 @@
 
 <div class="navbar">
     <div class="logo">
-        <a href="homepage.html"> <img id="logo" src="webimages/logo.png" width="125px"> </a>
+        <a href="index.html"> <img id="logo" src="webimages/logo.png" width="125px"> </a>
     </div>
     <nav>
         <ul>
@@ -209,7 +209,7 @@
     function signOut() {
         localStorage.removeItem('currentUser');
         alert('You have been signed out.');
-        window.location.href = 'homepage.html';
+        window.location.href = 'index.html';
     }
 
     // Display account page
@@ -223,7 +223,7 @@
                     <h2 style="color:#9a238e;">Please Sign In</h2>
                     <p style="color:#333;margin:20px 0;">You need to be signed in to view your account.</p>
                     <a href="signin.html" style="background:#9a238e;color:white;padding:12px 40px;border-radius:30px;text-decoration:none;">Sign In</a>
-                    <p style="margin-top:10px;color:#333;"><a href="homepage.html" style="color:#9a238e;">Continue as Guest</a></p>
+                    <p style="margin-top:10px;color:#333;"><a href="index.html" style="color:#9a238e;">Continue as Guest</a></p>
                 </div>
             `;
             return;
@@ -267,7 +267,7 @@
                     ${currentUser.role === 'admin' ? '<p style="color:#e74c3c;font-weight:bold;">🔐 Admin Account</p>' : ''}
                 </div>
                 <div>
-                    <a href="homepage.html" class="shop-now-btn">🏠 Home</a>
+                    <a href="index.html" class="shop-now-btn">🏠 Home</a>
                     <button class="sign-out-btn" onclick="signOut()">Sign Out</button>
                 </div>
             </div>
